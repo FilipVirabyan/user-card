@@ -1,0 +1,17 @@
+<div class="container">
+<div class="card d-flex m-4"*while="condition">
+  <div class="icon-cancel cross" (click)="remove()"></div>
+  <img class="card-img-top"
+       appProfileImage [userImage]="userInfo.image"
+       [userGender]="userInfo.gender" src="./assets/images/user1.png"
+       alt="" class="userImage">
+  <div class="card-body">
+    <h5 class="card-title">{{userInfo.name}}</h5>
+    <ul>
+      <li>Surname: {{userInfo.surname}}</li>
+      <li>age: {{userInfo.age}}</li>
+      <li>Gender: {{userInfo.gender}}</li>
+    </ul>
+  </div>
+</div>
+</div>
